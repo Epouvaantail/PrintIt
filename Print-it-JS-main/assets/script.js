@@ -31,7 +31,6 @@ function SlideChange(sens) {
 		currentSlide = 0;
 	if (currentSlide < 0)
 		currentSlide = maxSlide;
-
 	document.getElementById("slides").src = "./assets/images/slideshow/" + images[currentSlide];
 	document.getElementById("tagLine").innerHTML =" " + tagLine[currentSlide]
 	document.getElementById("dot"+[currentSlide]).className += " dot_selected"
@@ -39,6 +38,7 @@ function SlideChange(sens) {
 	document.getElementById("dot"+[currentSlide-sens]).className += " dot"
 	document.getElementById("dot"+[currentSlide+sens]).className -= " dot_selected"
 	document.getElementById("dot"+[currentSlide+sens]).className += " dot"
+
 }
 
 // function LeftArrow() {
