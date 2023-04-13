@@ -77,6 +77,7 @@ for (let i = 0; i < slidesLength; i++) {
 const dot = document.querySelectorAll(".dot");
 dot[0].classList.add("dot_selected");
 
+// on vas de la première à la dernière slide
 arrowLeft.addEventListener("click", () => {
   if (currentSlide === 0) {
     dot[currentSlide].classList.remove("dot_selected");
@@ -94,6 +95,7 @@ arrowLeft.addEventListener("click", () => {
   }
 })
 
+// on revient à la première slide depuis la dernière
 arrowRight.addEventListener("click", () => {
   if (currentSlide === maxSlide) {
     dot[currentSlide].classList.remove("dot_selected");
