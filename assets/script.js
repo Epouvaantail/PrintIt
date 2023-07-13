@@ -20,6 +20,8 @@ const slides = [
 	}
 ]
 
+// Première version fonctionnelle, sauf pour passer de la première à la dernière slide et inversement
+
 // const dots = document.querySelector(".dots");
 // const images = slides.map(slide => slide.image);
 // const tagLine = slides.map(slide => slide.tagLine);
@@ -57,15 +59,15 @@ const slides = [
 // document.getElementById("dot0").className += " dot_selected";
 
 
-const arrowLeft = document.querySelector(".arrow_left");
-const arrowRight = document.querySelector(".arrow_right");
+
 const image = document.querySelector(".banner-img");
 const slidesLength = slides.length;
 const maxSlide = slides.length - 1;
 const tagLine = document.querySelector(".tagLine");
 let currentSlide = 0;
 const dots = document.querySelector(".dots");
-
+const arrowLeft = document.querySelector(".arrow_left");
+const arrowRight = document.querySelector(".arrow_right");
 
 
 for (let i = 0; i < slidesLength; i++) {
